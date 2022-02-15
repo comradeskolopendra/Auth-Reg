@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизация и регистрация</title>
+    <link rel='stylesheet' type='text/css' href='style.css'/>
+</head>
+<body>
+    <div class="container--main">
+    <!-- HEADER -->
+    <header class="header">
+        <button class="button_back" id="button_back">
+            <img src="./images/arrow_left.svg" alt="ARROW" class="arrow" srcset="">
+        </button>
+        <picture>
+            <source media="(min-width:1025px)" srcset="./images/logo_desk.svg">
+            <source media="(max-width:1024px)" srcset="./images/logo_sz.svg">
+            <img src="./images/logo_sz.svg" alt="LOGO" srcset="">
+        </picture>
+        <button class="header__lang">kz</button>
+    </header>
+    <!-- END OF HEADER -->
+
+    <!-- CONTENT -->
+    <main class="main">
+        <h2 class="main__header">Вход в личный кабинет</h2>
+        <p class="main__paragraph">Введите номер телефона, на который был зарегистрирован личный кабинет.</p>
+
+        <input type="text" class="input input_type_tel" placeholder="Телефон">
+        <button class="button-yellow" disabled>Войти</button>
+        <button class="button-white">Создать учетную запись</button>
+        <div class="container__footer">
+            <div class="container__accordion">
+                <p class="text__login">Войти через соцсети</p>
+                <img src="./images/arrow_down.svg" alt="" srcset="" class="image__arrow" id="arrow_down">
+                <img src="./images/arrow_up.svg" alt="" srcset="" class="image__arrow display__none" id="arrow_up">
+            </div>
+            <div class="container__social display__none" id="container_social">
+                <img src="./images/ok.svg" alt="" srcset="" class="social_img">
+                <img src="./images/vk.svg" alt="" srcset="" class="social_img">
+                <img src="./images/facebook.svg" alt="" srcset="" class="social_img">
+                <img src="./images/google.svg" alt="" srcset="" class="social_img">
+                <img src="./images/yandex.svg" alt="" srcset="" class="social_img">
+                <img src="./images/mail.svg" alt="" srcset="" class="social_img">
+            </div>
+        </div>
+    </main>
+    <!-- END OF CONTENT -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
