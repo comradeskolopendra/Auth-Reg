@@ -6,10 +6,10 @@ let arrow_down = document.querySelector('#arrow_down')
 drop_down.addEventListener('click', (event) => {
     event.preventDefault();
     if (social.classList.contains('display__none')) {
-        arrow_down.classList.toggle('arrow__subclass')
+        arrow_down.classList.toggle('arrow__animation')
     }
     else if (!social.classList.contains('display__none')) {
-        arrow_down.classList.toggle('arrow__subclass')
+        arrow_down.classList.toggle('arrow__animation')
     }
     social.classList.toggle('display__none')
 })

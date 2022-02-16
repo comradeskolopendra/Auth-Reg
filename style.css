@@ -151,6 +151,7 @@ body {
     margin-top: 3px;
     width: 9px;
     height: 38px;
+    transition: all 0.3s linear 0s;
 }
 
 .social_img {
@@ -171,16 +172,6 @@ body {
 
 .button_back:hover {
     color: white;
-}
-
-.arrow__animation_up {
-    animation: arrow_animation_up 1s;
-    animation-fill-mode: forwards
-}
-
-.arrow__animation_down {    
-    animation: arrow_animation_down 1s;
-    animation-fill-mode: forwards
 }
 
 @media screen and (min-width: 1025px) {
@@ -234,10 +225,6 @@ body {
 
 /* ANIMATIONS */
 
-.animation__arrow {
-    transition: all 0.3s linear 0s;
-}
-
-.arrow__subclass {
+.arrow__animation {
     transform: rotate(180deg);
 }
