@@ -144,6 +144,9 @@ body {
     margin-left: 15px;
     margin-right: 15px;
     min-width: 300px;
+    position: relative;
+    animation: animation__down 1s;
+    animation-fill-mode: forwards;
 }
 
 .image__arrow {
@@ -227,4 +230,37 @@ body {
 
 .arrow__animation {
     transform: rotate(180deg);
+}
+
+.animation__down {
+    animation: animation_down 1s;
+    animation-fill-mode: forwards;
+}
+
+.animation__up {
+    animation: animation_up 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animation_down {
+    0% {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes animation_up {
+    0% {
+        top: 0px;
+        opacity: 1;
+    }
+
+    100% {
+        top: -30px;
+        opacity: 0;
+    }
 }

@@ -7,6 +7,8 @@ drop_down.addEventListener('click', (event) => {
     event.preventDefault();
     if (social.classList.contains('display__none')) {
         arrow_down.classList.toggle('arrow__animation')
+        social.classList.add('animation__down')
+        social.classList.remove('animation__up')
     }
     else if (!social.classList.contains('display__none')) {
         arrow_down.classList.toggle('arrow__animation')
