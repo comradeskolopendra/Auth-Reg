@@ -1,6 +1,6 @@
-let drop_down = document.querySelector('.container__accordion')
+const drop_down = document.querySelector('.container__accordion')
 let social = document.querySelector('#container_social')
-let button_back = document.querySelector('#button_back')
+const button_back = document.querySelector('#button_back')
 let arrow_down = document.querySelector('#arrow_down')
 
 drop_down.addEventListener('click', (event) => {
